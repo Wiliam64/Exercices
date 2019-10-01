@@ -1,0 +1,23 @@
+table{
+    text-align: center;
+    width: 50%;
+    color: white;
+    border: 3;
+}
+
+td{
+    height: 100px;
+}
+
+body{
+    background-color: black;
+}
+
+thead td{
+    height: 40px;
+}
+
+tfoot td{
+    height: 40px;
+}
+
