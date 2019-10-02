@@ -28,7 +28,6 @@ header{
 
 section{
     border: 1px black solid;
-    padding: 2cm;
     margin-bottom: 1cm;
     margin-right: 4cm;
     margin-left: 4cm;
@@ -36,27 +35,33 @@ section{
     background-color: white;
 }
 
-div img {
-    float: left;
-    position:relative;
-    bottom:150px;
-    padding: 1cm;
-}
-
 h2{
     text-align: center;
     margin:2cm;
 }
-
 .div2 img{
     float: right;
     position:relative;
-    bottom:150px;
+    top:10O0px;
+    padding: 1cm;
+    clear: both;
+}
+.div2 img{
+    float: right;
+    position:relative;
+    top:10O0px;
+    padding: 1cm;
+    clear: both;
+}
+
+
+.div3 img {
+    float: left;
+    position:relative;
+    bottom:10px;
     padding: 1cm;
 }
 
-.div3 img{
-    float: inline-start;
-    clear: left;
-    position: relative;
+.div2{
+    text-align: right;
 }
