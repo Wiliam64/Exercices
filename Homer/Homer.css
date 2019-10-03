@@ -12,10 +12,17 @@ section{
 }
 
 .img :hover{
-    background-image: url(/Homer/homer.png)
+    border-radius: 50%;
+    display: block;
+    display: flex;
+    align-content: center;
 }
 
 body{
     background-color: brown;
 }
 
+.img{
+    height: 200px;
+    width: 250px;
+}

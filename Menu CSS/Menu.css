@@ -1,0 +1,39 @@
+.menu{
+    display: inline;
+    list-style-type: none;
+}
+
+.menu1{
+    display: inline-block;
+    color: red;
+    text-decoration: underline red;
+    font-size: 40px;
+    margin: 1cm;
+    position: relative;
+}
+
+.menu1 a{
+    text-decoration: none;
+    color: rgb(248, 2, 2);
+}
+
+.menu1 :hover{
+    color: #8d0505;
+}
+
+header{
+    text-align: center;
+    padding-top: 6cm;
+}
+
+.sousmenu{
+    list-style-type: none;
+    color: black;
+    display: none;
+    position: absolute;
+}
+
+.menu1 > .sousmenu > li :hover{
+    display: block;
+    position: relative;
+}
