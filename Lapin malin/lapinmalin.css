@@ -42,12 +42,14 @@ h2{
 .div1 img{
     float: left;
     position:relative;
-    height:15cm;
+    margin-bottom: 6cm;
+    top: 60px;
 }
 .div2 img{
     float: right;
     position:relative;
-    height:15cm;
+    margin-bottom: 6cm;
+    top: 60px;
 }
 
 .div3{
@@ -58,4 +60,16 @@ h2{
 
 .div2{
     text-align: right;
+}
+
+@media print{
+
+    section{
+            page-break-after: always;
+            font-size-adjust: initial;
+    }
+@page{
+    page-break-after: avoid;
+    margin-bottom: none;
+    }
 }

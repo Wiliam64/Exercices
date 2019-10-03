@@ -1,1 +1,21 @@
-div img {display: none};
+@media print{
+
+    section{
+            page-break-after: always;
+            font-size-adjust: initial;
+    }
+
+    .img{
+        display: none;
+    }
+
+    nav{
+        -webkit-print-color-adjust: exact;
+    }
+@page{
+    page-break-inside: avoid;
+    margin-bottom: none;
+    zoom: -50%;
+
+    }
+}
