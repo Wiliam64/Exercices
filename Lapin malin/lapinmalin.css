@@ -61,15 +61,3 @@ h2{
 .div2{
     text-align: right;
 }
-
-@media print{
-
-    section{
-            page-break-after: always;
-            font-size-adjust: initial;
-    }
-@page{
-    page-break-after: avoid;
-    margin-bottom: none;
-    }
-}
