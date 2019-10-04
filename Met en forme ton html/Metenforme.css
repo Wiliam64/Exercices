@@ -1,0 +1,27 @@
+
+body{
+    background: #669fee;
+    display: block;
+}
+nav{
+    background: #4a7abc;
+    display: block;
+    height:100px;
+    margin-top:150px;
+}
+
+aside{
+    background: #4b5f7a;
+    float: right;
+    display: block;
+    height:650px;
+    width: 250px;
+}
+
+footer{
+    background: #2d4463;
+    height: 2cm;
+    margin-top:600px;
+    display: block;
+    clear: both;
+}
