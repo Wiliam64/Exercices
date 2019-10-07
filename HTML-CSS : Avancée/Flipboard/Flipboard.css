@@ -10,7 +10,7 @@ body{
     margin-left: 50px;
 }
 
-div{
+article{
     display: inline-block;
     background-color:white;
     width: 450px;
@@ -23,8 +23,8 @@ header{
 }
 
 
-article :hover{
-     animation: rotateAnim 4s normal;
+section article :hover{
+     animation: rotateAnim 3s normal;
 }
 
 @keyframes rotateAnim {

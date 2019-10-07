@@ -1,28 +1,19 @@
-header{
-    background-color: rgba(228, 136, 83, 0.699);
-    text-align: center
-}
-
-h1{
-    text-align: center;
+body{
+    background-color: rgb(175, 133, 133);
 }
 
 section{
-    text-align: center
+    text-align: center;
+    background-color: antiquewhite;
 }
 
-.img :hover{
+img{
+    height: 650px;
+    width: 600px;
+    border-radius: 20%;
+}
+img :hover {
     border-radius: 50%;
-    display: block;
-    display: flex;
-    align-content: center;
+    box-shadow: 2px, red
 }
 
-body{
-    background-color: brown;
-}
-
-.img{
-    height: 200px;
-    width: 250px;
-}

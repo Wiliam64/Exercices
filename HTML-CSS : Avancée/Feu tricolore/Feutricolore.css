@@ -1,33 +1,44 @@
-.feu{
+body{
+    background-color: rgb(31, 29, 29);
+}
+
+section{
     height: 600px;
     width: 300px;
     background-color: grey;
     padding-top: 7px;
     padding-bottom: 100px;
+    margin-top: 3cm;
+    display: inline-block;
+    margin:1cm;
+    
 }
 
 .third{
     height: 100px;
     width: 100px;
-    background-color: rgb(173, 11, 11);
+    background-color: rgb(173, 11, 11, 0.404);
     border-radius: 50%;
     margin: 90px;
+    border: black solid 1px;
 }
 
 .second{
     height: 100px;
     width: 100px;
-    background-color: rgb(218, 188, 19);
+    background-color: rgb(218, 188, 14, 0.404);
     border-radius: 50%;
     margin: 90px;
+    border: black solid 1px;
 }
 
 .first{
     height: 100px;
     width: 100px;
-    background-color: rgb(4, 78, 4);
+    background-color: rgba(4, 78, 4, 0.404);
     border-radius: 50%;
     margin: 90px;
+    border: black solid 1px;
 }
 
 .first:hover{
@@ -40,5 +51,63 @@
 
 .third:hover {
     background-color: rgb(250, 41, 41)
+}
+
+#red{
+    animation : red  10s  infinite;
+}
+
+#orange{
+    animation : orange  10s  infinite;
+}
+
+#green{
+    animation: green  10s  infinite;
+}
+
+@keyframes green{
+    0%, 20%{background: rgb(7, 206, 7);}
+    21%, 100%{background: rgba(4, 78, 4, 0.404);}
+} 
+
+@keyframes orange{
+    0%, 21%{ background-color: rgb(218, 188, 14, 0.404)}
+    22%,30%{background-color: rgb(238, 235, 49)}
+    31%,100%{background-color: rgb(218, 188, 14, 0.404)}
+}
+
+@keyframes red{
+    0%,30%{background-color: rgb(173, 11, 11, 0.404)}
+    31%,50%{background-color: rgb(250, 41, 41)}
+    51%,100%{background-color: rgb(250, 41, 41)}
+}
+#red2{
+    animation : red2  10s  infinite;
+}
+
+#orange2{
+    animation : orange2  10s  infinite;
+}
+
+#green2{
+    animation: green2  10s  infinite;
+}
+
+@keyframes green2{
+    0%, 50%{background: rgba(4, 78, 4, 0.404);}
+    51%, 70%{background: rgb(7, 206, 7);}
+    71%, 100%{background: rgba(4, 78, 4, 0.404);}
+} 
+
+@keyframes orange2{
+    0%, 71%{ background-color: rgb(218, 188, 14, 0.404)}
+    72%,80%{background-color: rgb(238, 235, 49)}
+    81%,100%{background-color: rgb(218, 188, 14, 0.404)}
+}
+
+@keyframes red2{
+    51%,80%{background-color: rgb(173, 11, 11, 0.404)}
+    0%,50%{background-color: rgb(250, 41, 41)}
+    81%, 100%{background-color: rgb(250, 41, 41)}
 }
 
