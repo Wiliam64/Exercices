@@ -23,7 +23,7 @@ header{
 }
 
 
-section article :hover{
+section :hover{
      animation: rotateAnim 3s normal;
 }
 
