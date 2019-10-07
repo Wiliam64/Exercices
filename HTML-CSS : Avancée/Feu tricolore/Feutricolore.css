@@ -1,0 +1,44 @@
+.feu{
+    height: 600px;
+    width: 300px;
+    background-color: grey;
+    padding-top: 7px;
+    padding-bottom: 100px;
+}
+
+.third{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(173, 11, 11);
+    border-radius: 50%;
+    margin: 90px;
+}
+
+.second{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(218, 188, 19);
+    border-radius: 50%;
+    margin: 90px;
+}
+
+.first{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(4, 78, 4);
+    border-radius: 50%;
+    margin: 90px;
+}
+
+.first:hover{
+    background-color: rgb(7, 206, 7)
+}
+
+.second:hover{
+    background-color: rgb(238, 235, 49)
+}
+
+.third:hover {
+    background-color: rgb(250, 41, 41)
+}
+
