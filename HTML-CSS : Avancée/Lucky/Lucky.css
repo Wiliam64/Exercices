@@ -1,0 +1,40 @@
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(/foret.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.baby{
+    height: auto;
+    width: 20%;
+}
+
+.slide div img {
+	margin-right: 0px;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.slide div:hover img {
+	margin-left: -100%;
+}

@@ -1,0 +1,84 @@
+body{
+    height: 60cm;
+    width: 100%;
+    background-image: radial-gradient(circle at top left, white, rgb(117, 156, 117));
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height:3cm;
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+nav li{
+    display:inline-block;
+    padding:8px 14px;
+    font-size:21px;
+    color: black;
+}
+nav li ul{
+    visibility:hidden;
+    position:absolute;
+    margin-left:-50px;
+    transition:all .3s ease-in-out;
+    opacity:0;
+}
+nav li:hover ul{
+    visibility:visible;
+    opacity:1;
+}
+
+ul{
+    margin-top: 0;
+}
+ nav a{
+     text-decoration: none;
+     color:black;
+ }
+
+ 
+nav{
+     padding-top: 30px;
+     text-align: right;
+ }
+
+ .sousmenu {
+     display: flex;
+     flex-direction: column;
+     padding-top:15px;
+     padding-right:20px;
+     margin-right:220px;
+     text-align:center;
+     background-color: white;
+     padding-left: 20px;
+ }
+
+ nav :hover,li ,a :hover{
+    color:rgb(12, 97, 12)
+ }
+
+.logo{
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.reseaux{
+    float: right;
+    position: relative;
+    top: 32px;
+    padding-left: 20px;
+    margin-right: 20px;
+    margin-left:30px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.reseaux a{
+    margin-right:20px;
+}
