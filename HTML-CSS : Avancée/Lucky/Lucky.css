@@ -24,17 +24,3 @@ section{
     justify-content: flex-end;
     align-items: flex-end;
 }
-
-.baby{
-    height: auto;
-    width: 20%;
-}
-
-.slide div img {
-	margin-right: 0px;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.slide div:hover img {
-	margin-left: -100%;
-}
