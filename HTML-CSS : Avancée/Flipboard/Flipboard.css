@@ -2,7 +2,7 @@ img{
     height: 300px;
     width: 400px;
     margin: 20px;
-    display: block;
+
 }
 
 body{
@@ -10,9 +10,8 @@ body{
     margin-left: 50px;
 }
 
-article{
+div{
     display: inline-block;
-    background-color:white;
     width: 450px;
     height: 400px;
     text-align: center;
@@ -22,12 +21,34 @@ header{
     height: 300px;
 }
 
-
-section :hover{
-     animation: rotateAnim 3s normal;
-}
-
-@keyframes -webkit-rotateAnim {
-    from {transform: rotateY(0);}
-    to {transform: rotateY(180deg);}
-}
+  .flip-card-inner {
+    position: relative;
+    width: 450px;
+    height: 400px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    width: 450px;
+    height: 400px;
+    backface-visibility: hidden;
+    position: absolute;
+  }
+  
+  .flip-card-front {
+    background-color: white;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+    position:relative;
+  }
