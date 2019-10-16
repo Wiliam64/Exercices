@@ -10,17 +10,91 @@ body{
     height: 100%;
     background-image: url(/foret.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 2000px 1000px;
+    background-position-y: -10px;
     margin: 0;
     padding: 0;
 }
 
+.women img{
+    width: 150px;
+    height: 150px;
+}
 
-section{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
+.pedo img{
+    width: 150px;
+    height: 150px;
+}
+
+.women{
+    position: absolute;
+    animation: animationwomen 3s infinite linear;
+    bottom: 38%;
+}
+
+.pedo{
+    position: absolute;
+    animation: animationpedo 3s infinite linear;
+    bottom:38%
+}
+
+.trappe{
+    position: absolute;
+    bottom: 38%;
+    left:57%;
+    height: 10px;
+    width: 100px;
+    background-color: rgb(110, 109, 109);
+    animation: trappeanimation 3s infinite;
+}
+
+.trappe2{
+    position: absolute;
+    bottom: 38%;
+    left:63%;
+    height: 10px;
+    width: 100px;
+    background-color: rgb(110, 109, 109);
+    animation: trappeanimation2 3s infinite;
+}
+
+@keyframes animationwomen{
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 110%;
+    }
+}
+
+@keyframes animationpedo{
+    0%{
+        left:-10%;
+    }
+    60%{
+        bottom:38%;
+        left:59%;
+    }
+    100%{
+        bottom:0%;
+        left:59%
+    }
+}
+
+@keyframes trappeanimation{
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(0deg);}
+    35%{transform: rotate(0deg);}
+    50%{transform: rotate(0deg);}
+    57%{transform: rotate(60deg);}
+    100%{transform: rotate(90deg);}
+}
+
+@keyframes trappeanimation2{
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(0deg);}
+    35%{transform: rotate(0deg);}
+    50%{transform: rotate(0deg);}
+    57%{transform: rotate(-60deg);}
+    100%{transform: rotate(-90deg);}
 }
