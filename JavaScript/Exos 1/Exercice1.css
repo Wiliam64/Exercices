@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(95, 92, 92);
+    width: 50%;
+    margin-left: 25%;
+}
+article{
+    background-color: white;
+}
+div{
+	font-size:2em;
+	color:red;
+}
