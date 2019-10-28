@@ -91,3 +91,34 @@ document.getElementById('article2').style.justifyContent="center";
 
 
 //Crée la div dans une page\\
+
+let news = document.createElement('div');
+news.textContent = "Je suis madiv"
+
+//Déclarer une variable maDiv\\
+
+let madiv = news
+
+
+//Afficher la variable dans la console\\
+
+console.log(madiv)
+
+
+//Ajouter un id et lui donnerune valeur\\
+
+news.id = "majoliediv"
+
+
+//Afficher la variable dans la console\\
+
+console.log(madiv)
+
+
+//Crée une classe CSS maClasse avec des propriétés\\
+
+news.className = "maClasse"
+document.body.appendChild(news)
+document.getElementsByClassName("maClasse")[1].style.color="white"
+document.getElementById("majoliediv").getElementsByClassName("maClass").style.color="white"
+
