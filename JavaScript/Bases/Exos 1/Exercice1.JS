@@ -119,6 +119,5 @@ console.log(madiv)
 
 news.className = "maClasse"
 document.body.appendChild(news)
-document.getElementsByClassName("maClasse")[1].style.color="white"
-document.getElementById("majoliediv").getElementsByClassName("maClass").style.color="white"
+document.querySelectorAll(".maClasse").forEach(div => div.style.color = "white")
 
