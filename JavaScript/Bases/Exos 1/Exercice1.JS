@@ -93,7 +93,7 @@ document.getElementById('article2').style.justifyContent = "center";
 //Crée la div dans une page\\
 
 let news = document.createElement('div');
-news.textContent = "Je suis madiv"
+news.textContent = "Je suis maDiv"
 
 //Déclarer une variable maDiv\\
 
@@ -166,7 +166,7 @@ let leave = function () {
     this.style.color = "white"; this.style.transitionDuration = "1s"
 };
 
-document.getElementById("Survol").onmouseenter = enter
-document.getElementById("Survol").onmouseleave = leave
+document.querySelector("h1").onmouseenter = enter
+document.querySelector("h1").onmouseleave = leave
 
 
