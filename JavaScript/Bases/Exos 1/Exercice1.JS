@@ -150,12 +150,16 @@ monImage.onclick = anim;
 
 
 let titre = document.createElement('h1');
-titre.id = "Survol";
-titre.textContent = "Survol moi";
+titre.id = "titre"
 document.body.appendChild(titre);
-document.getElementById('Survol').style.color = "white";
-document.getElementById('Survol').style.textAlign = "center";
 
+
+let span = document.createElement('span');
+span.id = "Survol"
+span.textContent = "Survol moi"
+document.getElementById("titre").appendChild(span);
+document.getElementById('Survol').style.color = "white";
+document.getElementById('titre').style.textAlign = "center";
 
 
 let enter = function () {
@@ -166,5 +170,5 @@ let leave = function () {
     this.style.color = "white"; this.style.transitionDuration = "1s";
 };
 
-titre.onmouseenter = enter;
-titre.onmouseleave = leave;
+span.onmouseenter = enter;
+span.onmouseleave = leave;
