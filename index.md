@@ -1,1 +1,1 @@
-* <a href="HTML-CSS : Avancée/Feu tricolore/Feu.html">Feu Tricolore</a>
+* <a href="HTML-CSS : Avancée/Feu tricolore">Feu Tricolore</a>
