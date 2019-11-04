@@ -166,7 +166,5 @@ let leave = function () {
     this.style.color = "white"; this.style.transitionDuration = "1s"
 };
 
-document.querySelector("h1").onmouseenter = enter
-document.querySelector("h1").onmouseleave = leave
-
-
+titre.onmouseenter = enter
+titre.onmouseleave = leave
