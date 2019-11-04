@@ -172,3 +172,75 @@ let leave = function () {
 
 span.onmouseenter = enter;
 span.onmouseleave = leave;
+
+
+
+
+//Sixième Partie\\
+
+
+let para1 = document.createElement("div");
+para1.id = "para1";
+document.body.appendChild(para1);
+document.getElementById("para1").style.display = "flex"
+document.getElementById("para1").style.justifyContent = "space-around"
+
+
+// let para2 = document.createElement("div");
+// para2.id = "para2";
+// document.body.appendChild(para2);
+
+let p1 = document.createElement("p");
+p1.id = "p1";
+p1.textContent = "Harum trium sententiarum nulli prorsus assentior. \
+ Nec enim illa prima vera est, ut, quem ad modum in se quisque sit, \
+ sic in amicum sit animatus. Quam multa enim, quae nostra causa \
+ numquam faceremus, facimus causa amicorum! precari ab indigno,\
+  supplicare, tum acerbius in aliquem invehi insectarique \
+  vehementius, quae in nostris rebus non satis honeste, in \
+  amicorum fiunt honestissime; multaeque res sunt in quibus de \
+  suis commodis viri boni multa detrahunt detrahique patiuntur, \
+  ut iis amici potius quam ipsi fruantur."
+document.getElementById("para1").appendChild(p1);
+document.getElementById('p1').style.color = "white";
+document.getElementById("p1").style.textAlign = "left justify"
+document.getElementById("p1").style.border = "solid 2px black"
+document.getElementById("p1").style.marginRight = "25px"
+document.getElementById("p1").style.padding = "30px"
+
+
+
+
+let p2 = document.createElement("p");
+p2.id = "p2";
+p2.textContent = "Harum trium sententiarum nulli prorsus assentior. \
+ Nec enim illa prima vera est, ut, quem ad modum in se quisque sit, \
+ sic in amicum sit animatus. Quam multa enim, quae nostra causa \
+ numquam faceremus, facimus causa amicorum! precari ab indigno,\
+  supplicare, tum acerbius in aliquem invehi insectarique \
+  vehementius, quae in nostris rebus non satis honeste, in \
+  amicorum fiunt honestissime; multaeque res sunt in quibus de \
+  suis commodis viri boni multa detrahunt detrahique patiuntur, \
+  ut iis amici potius quam ipsi fruantur."
+document.getElementById("para1").appendChild(p2);
+document.getElementById('p2').style.color = "white";
+document.getElementById("p2").style.textAlign = "right"
+document.getElementById("p2").style.border = "solid 2px black"
+document.getElementById("p1").style.marginLeft = "25px"
+document.getElementById("p2").style.padding = "30px"
+
+
+let enter1 = function () {
+    this.style.borderColor = "white"; this.style.color = "black"; this.style.transitionDuration = "1s";
+};
+
+let leave1 = function () {
+    this.style.borderColor = "black"; this.style.color = "white"; this.style.transitionDuration = "1s";
+};
+
+
+p1.onmouseenter = enter1
+p1.onmouseleave = leave1
+
+p2.onmouseenter = enter1
+p2.onmouseleave = leave1
