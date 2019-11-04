@@ -13,9 +13,9 @@ document.getElementById('couleur').style.color = "orange"; //Ou .getElementsByCl
 
 let hola = document.createElement('div');
 hola.id = "color";
-hola.textContent = "Holla"
-document.getElementById("article").appendChild(hola)
-document.getElementById('color').style.color = "orange"
+hola.textContent = "Holla";
+document.getElementById("article").appendChild(hola);
+document.getElementById('color').style.color = "orange";
 
 
 //Modifier la position du text et aligner à gauche et à droite\\
@@ -47,26 +47,26 @@ document.getElementById('color').innerHTML = temp1;
 
 //Article\\
 let article2 = document.createElement('article');
-article2.id = "article2";
-document.getElementById("article").appendChild(article2)
+article2.id = "article2";;
+document.getElementById("article").appendChild(article2);
 
 
 
 //3 Div\\
 
 let text1 = document.createElement('div');
-text1.textContent = "Texte1"
-document.getElementById("article2").appendChild(text1)
+text1.textContent = "Texte1";
+document.getElementById("article2").appendChild(text1);
 
 
 let text2 = document.createElement('div');
-text2.textContent = "Texte2"
-document.getElementById("article2").appendChild(text2)
+text2.textContent = "Texte2";
+document.getElementById("article2").appendChild(text2);
 
 
 let text3 = document.createElement('div');
-text3.textContent = "Texte3"
-document.getElementById("article2").appendChild(text3)
+text3.textContent = "Texte3";
+document.getElementById("article2").appendChild(text3);
 
 
 
@@ -93,33 +93,33 @@ document.getElementById('article2').style.justifyContent = "center";
 //Crée la div dans une page\\
 
 let news = document.createElement('div');
-news.textContent = "Je suis maDiv"
+news.textContent = "Je suis maDiv";
 
 //Déclarer une variable maDiv\\
 
-let madiv = news
+let madiv = news;
 
 
 //Afficher la variable dans la console\\
 
-console.log(madiv)
+console.log(madiv);
 
 
 //Ajouter un id et lui donnerune valeur\\
 
-news.id = "majoliediv"
+news.id = "majoliediv";
 
 
 //Afficher la variable dans la console\\
 
-console.log(madiv)
+console.log(madiv);
 
 
 //Crée une classe CSS maClasse avec des propriétés\\
 
-news.className = "maClasse"
-document.body.appendChild(news)
-document.querySelectorAll(".maClasse").forEach(div => div.style.color = "white")
+news.className = "maClasse";
+document.body.appendChild(news);
+document.querySelectorAll(".maClasse").forEach(div => div.style.color = "white");
 
 
 
@@ -132,18 +132,18 @@ document.querySelectorAll(".maClasse").forEach(div => div.style.color = "white")
 
 let anim = function () { this.style.backgroundColor = "blue"; this.style.borderRadius = "50%"; this.style.transitionDuration = "0.6s"; };
 
-let monImage = new Image(500, 500)
+let monImage = new Image(500, 500);
 
 document.body.appendChild(monImage);
 
 
 //Afficher la source dans la console\\
 
-let source = monImage.src = "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png"
+let source = monImage.src = "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png";
 
-console.log(source)
+console.log(source);
 
-monImage.onclick = anim
+monImage.onclick = anim;
 
 
 //Cinquième Partie\\
@@ -159,12 +159,12 @@ document.getElementById('Survol').style.textAlign = "center";
 
 
 let enter = function () {
-    this.style.color = "brown"; this.style.transitionDuration = "1s"
+    this.style.color = "brown"; this.style.transitionDuration = "1s";
 };
 
 let leave = function () {
-    this.style.color = "white"; this.style.transitionDuration = "1s"
+    this.style.color = "white"; this.style.transitionDuration = "1s";
 };
 
-titre.onmouseenter = enter
-titre.onmouseleave = leave
+titre.onmouseenter = enter;
+titre.onmouseleave = leave;
