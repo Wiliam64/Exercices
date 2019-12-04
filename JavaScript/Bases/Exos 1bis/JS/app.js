@@ -4,7 +4,6 @@ let anim = function () {
     this.style.transform = "rotate(" + 360*deg + "deg) ";
     this.style.transition ="linear";
     this.style.transitionDuration = "0.5s";
-    this.style.elevateZoom()
 }
     let monImage = new Image(1500, 900);
     document.body.appendChild(monImage);
