@@ -1,0 +1,80 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#cadran{
+    margin-top: 10vh;
+    height: 600px;
+    width: 600px;
+    background-color:rgba(212, 212, 212, 0.425) ;
+    /* border-radius: 50%; */
+    border : solid grey 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: haha 1.5s alternate-reverse infinite ease-in-out;
+}
+
+#minute{
+    width: 15px;
+    height: 250px;
+    background-color: grey;
+    margin-top: 240px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    animation: anim 3600s steps(60) infinite;
+    transform-origin: top;
+}
+
+#heure{
+    width: 10px;
+    height: 200px;
+    background-color: black;
+    position: absolute;
+    margin-top: 95px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    animation: anim 43200s steps(12) infinite;
+    transform-origin: top;
+}
+
+#seconde{
+    width: 5px;
+    height: 260px;
+    background-color: red;
+    position: absolute;
+    margin-top: 125px;
+    animation: anim 60s steps(60) infinite;
+    transform-origin: top;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+#point{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50% ;
+}
+@keyframes anim{
+    100% {transform: rotateZ(360deg);}
+}
+@keyframes anim2{
+    100% {transform: rotateZ(360deg);}
+}
+@keyframes anim3{
+    100% {transform: rotateZ(360deg);}
+}
+
+
+.anim{
+    border-radius: 50%;
+    transform: rotateZ(360deg);
+    transition-duration: 0.5s;
+}

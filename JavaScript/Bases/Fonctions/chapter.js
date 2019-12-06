@@ -1,8 +1,8 @@
 let crea = function creation(){
 
-    let nombrePara = Number(prompt('Combien de paragraphes?'));
+    let nombreDePara = Number(prompt('Combien de paragraphes?'));
 
-    for (let i = 0; i < nombrePara; i++) {
+    for (let i = 0; i < nombreDePara; i = i + 1) {
         let titre = document.createElement("h1");
         let para = document.createElement("p");
         let paraTitre = prompt('Entrez un titre');

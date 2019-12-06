@@ -8,9 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="cercle"></div>
-    <section></section>
-    <div id="balle" draggable="true"></div>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <section ondrop="drop(event)" ondragover="allowDrop(event)">
+
+            <div id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69"></div>
+    </section>
     <script src="drag.js"></script>
 </body>
 </html>
