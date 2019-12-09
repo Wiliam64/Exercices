@@ -25,11 +25,10 @@ body{
     width: 15px;
     height: 250px;
     background-color: grey;
-    margin-top: 240px;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    animation: anim 3600s steps(60) infinite;
-    transform-origin: top;
+    margin-top: -245px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform-origin: bottom;
 }
 
 #heure{
@@ -37,11 +36,10 @@ body{
     height: 200px;
     background-color: black;
     position: absolute;
-    margin-top: 95px;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    animation: anim 43200s steps(12) infinite;
-    transform-origin: top;
+    margin-top: -99px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform-origin: bottom;
 }
 
 #seconde{
@@ -49,11 +47,10 @@ body{
     height: 260px;
     background-color: red;
     position: absolute;
-    margin-top: 125px;
-    animation: anim 60s steps(60) infinite;
-    transform-origin: top;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    margin-top: -125px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform-origin: bottom;
 }
 #point{
     height: 30px;
@@ -62,19 +59,9 @@ body{
     position: absolute;
     border-radius: 50% ;
 }
-@keyframes anim{
-    100% {transform: rotateZ(360deg);}
-}
-@keyframes anim2{
-    100% {transform: rotateZ(360deg);}
-}
-@keyframes anim3{
-    100% {transform: rotateZ(360deg);}
-}
-
 
 .anim{
     border-radius: 50%;
     transform: rotateZ(360deg);
-    transition-duration: 0.5s;
+    transition-duration: 1s;
 }

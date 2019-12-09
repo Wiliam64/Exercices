@@ -1,14 +1,30 @@
-// let deg = 0;
-// let anim = function () {
-//     deg ++;
-//     this.style.transform = "rotate(" + 360*deg + "deg) ";
-//     this.style.transition = "linear";
-//     this.style.transitionDuration = "0.5s";
-//     this.style.borderRadius = "50%";
-// }
+//Animation
 
 let horloge = document.querySelector("article")
-// horloge.addEventListener("click", anim);
-horloge.addEventListener('click', function(){
+function anim (){
     horloge.classList.toggle("anim");
-});
+    alert("Ok ?")
+};
+
+//Récupération des aiguilles
+
+let hours = document.getElementById('heure');
+let min = document.getElementById('minute');
+let sec = document.getElementById('seconde');
+console.log(hours, min, sec);
+
+//Fonction
+
+function blabla(){
+    let date = new Date();
+    let heure = date.getHours();
+    let minute = date.getMinutes();
+    let seconde = date.getSeconds();
+    console.log(heure, minute, seconde);
+    
+    hours.style.transform = 'rotate(' + (((heure/12)*360) + ((minute/60)*30)) + 'deg)';
+    min.style.transform = 'rotate(' + (((minute/60)*360) + ((seconde/60)*6) ) + 'deg)';
+    sec.style.transform = 'rotate(' + ((seconde/60)*360) + 'deg)';
+};
+
+setInterval(blabla,1000);
