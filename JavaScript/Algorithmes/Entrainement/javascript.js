@@ -1,10 +1,11 @@
 let id = ("12345");
 let iduser = ("");
+let essai = 0;
 
-iduser = prompt("Identifiant")
-
-
-if(iduser!==id){
-do{prompt("Identifiant incorrect")}
-while(iduser === id)
+do{
+    essai++;
+    console.log("essai n°" + essai);
+    prompt("Id ?")
+    
 }
+while(iduser != id)
