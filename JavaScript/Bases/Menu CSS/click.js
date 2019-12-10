@@ -50,11 +50,11 @@
 // m4.onmouseleave = leave4
 
 let menu = document.querySelectorAll("a");
-let smenu = document.querySelectorAll("nav li ul")
+let smenu = document.querySelectorAll("nav li ul");
 console.log(menu);
 for(let i = 0; i < menu.length; i = i + 1){
     let anim = function anim(){
-        smenu[i].classList.toggle('class')
+        smenu[i].classList.toggle('class');
     }
-    menu[i].addEventListener('click', anim)
+    menu[i].addEventListener('click', anim);
 };

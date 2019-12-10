@@ -3,7 +3,7 @@
 let horloge = document.querySelector("article")
 function anim (){
     horloge.classList.toggle("anim");
-    alert("Ok ?")
+    alert("Ready ?")
 };
 
 //Récupération des aiguilles
