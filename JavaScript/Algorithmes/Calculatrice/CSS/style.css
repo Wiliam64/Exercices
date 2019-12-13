@@ -15,7 +15,10 @@ body{
     border: black 1px solid;
 }
 
-input{
+#ecran{
     height: 70px;
     width: 402px;
+    border: black 1px solid;
+    margin-left: 12px;
+    font-size: large;
 }
