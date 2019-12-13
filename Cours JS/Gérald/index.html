@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script src="script.js"></script>
+    <script>
+        let maTesla = new Voiture('vert');
+        let monAutreTesla = new Voiture('bleu');
+        console.log(maTesla.couleur);
+        console.log(monAutreTesla.couleur);
+        maTesla.klaxonner();
+    </script>
+    <script src="robot.js"></script>
+    <script>
+    let Mr_Robot = new Robot("1","2","Ronde", "Une clé sur la tete", "Rondes", "Carré", "Ressors", "1", "Roues", "3");
+    console.log(Mr_Robot);
+    Mr_Robot.LeverBras();
+    
+    let Mme_Robot = new Robot("2", "3", "Carré", "Des vis dans le cou", "", "Rectangle", "Pointus", "2", "Carré", "4")
+    Mme_Robot;
+    Mme_Robot.Parler();
+
+    let robot2 = new Robot2("2", "3", "Carré", "Des vis dans le cou", "", "Rectangle", "Pointus", "2", "Carré", "4", "2")
+    console.log(robot2);
+    robot2.Rouler();
+    
+    </script>
+</body>
+</html>
