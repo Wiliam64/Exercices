@@ -9,9 +9,9 @@ for (let i = 0; i <= 7; i++) {
 		console.log("Vous avez trouvé en " + i + " essai(s)")
         break; 
     } else if ( essai < solution){ 
-            console.log(essai + " est trop petit");
+            alert(essai + " est trop petit");
     } else {
-            console.log(essai + " est trop grand");
+            alert(essai + " est trop grand");
     }
 
 if (i === 7){
