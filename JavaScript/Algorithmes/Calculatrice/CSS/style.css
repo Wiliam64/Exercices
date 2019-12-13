@@ -1,0 +1,21 @@
+body{
+    display: flex;
+}
+.ligne{
+    display: flex;
+}
+
+.ligne div{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(173, 173, 173);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black 1px solid;
+}
+
+input{
+    height: 70px;
+    width: 402px;
+}
