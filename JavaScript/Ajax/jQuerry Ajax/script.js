@@ -1,3 +1,9 @@
+/* A reprendre en jQuerry
+
+
+
+
+
 // Je crée une requete
 let requete = new XMLHttpRequest;
 

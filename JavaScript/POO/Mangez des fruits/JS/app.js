@@ -10,7 +10,4 @@ canvas.height = innerHeight;
 
 canvas.addEventListener('click', () => {
     ctx.drawImage(img, 790, 400);
-}) 
-
-// let canvas2 = new Canvas("300", "300");
-// document.body.appendChild(canvas2);
+})
