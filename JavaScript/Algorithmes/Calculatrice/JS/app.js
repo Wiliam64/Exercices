@@ -1,6 +1,5 @@
 let chiffre = document.querySelectorAll('.caractere');
 let n1 = "";
-let n2 =""
 let egal = document.getElementById('egale');
 let clean = document.getElementById('clean');
 let ecran = document.getElementById('ecran');
@@ -26,7 +25,7 @@ clean.addEventListener('click', () => {
     ecran.textContent = ""
 })
 
-document.addEventListener('keydown', (e) => {
-    ecran.textContent += e.key
-    console.log(n2);
-})
+// document.addEventListener('keydown', (e) => {
+//     ecran.textContent += e.key
+//     console.log(n2);
+// })
