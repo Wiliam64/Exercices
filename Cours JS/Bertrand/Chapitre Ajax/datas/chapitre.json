@@ -1,17 +1,18 @@
 [
     {
         "titre" : "Bienvenue !",
-        "chapitre" : "Bienvenue sur mon site ! Plein de lorem ipsum..."
+        "texte" : "Bienvenue sur mon site ! Plein de lorem ipsum..."
     },
     {
-        "titre" : "Chapitre 1 : un chapitre pour débuter",
-        "chapitre" : "Paragraphe chapitre 1"
+        "titre" : "Titre 1 : un chapitre pour débuter",
+        "texte" : "Paragraphe texte 1"
     },
     {
-        "titre" : "Chapitre 2 : un autre chapitre",
-        "chapitre" : "Paragraphe chapitre 2"},
+        "titre" : "Titre 2 : un autre chapitre",
+        "texte" : "Paragraphe texte 2"
+    },
     {
-        "titre" : "Chapitre 3 : encore un chapitre",
-        "chapitre" : "Paragraphe chapitre 3"
+        "titre" : "Titre 3 : encore un chapitre",
+        "texte" : "Paragraphe texte 3"
     }
 ]
