@@ -1,7 +1,7 @@
 // Je crée une requete
 let requete = new XMLHttpRequest;
 
-// J'ouvre ma requete, je renseigne la méthode 'POST' ou 'GET', et l'URL/fichier à récuopérer
+// J'ouvre ma requete, je renseigne la méthode 'POST' ou 'GET', et l'URL/fichier à récupérer
 requete.open("GET", "JS/fromages.json");
 
 // Je demande le type de réponse recus (texte, JSON, etc)
@@ -18,23 +18,9 @@ requete.onload = function(){
    let fromage = requete.response;
 
    // Je parcours mon tableau avec 'forEach', avec pour argument 'element', qui représente chaque element de mon tableau
-   fromage.forEach(element => {
-
-    // Je déclare mes balises HTML personnalisées ou non
-       let mesdiv = document.createElement('div');
-       let titre = document.createElement('h1');
-       let classement = document.createElement('classement')
-       let type = document.createElement('type');
-
-    // J'insère le texte dans mes balises depuis l'argument 'element' suivis de l'information de mon tableau que je veux recueillir 
-       titre.innerText = element.nom;
-       classement.innerHTML = element.classement;
-       type.innerHTML = "Type : " + element.type + ' / Pays : ' + element.pays;
-
-    // Je place mes balises dans le document HTML
-       document.body.appendChild(mesdiv);
-       mesdiv.appendChild(titre);
-       mesdiv.appendChild(classement);
-       mesdiv.appendChild(type);
+   fromage.forEach(e => {
+      
+    // Je crée un objet 'Fromages', avec la class 'Fromage', pour chaque element de mon tableau
+      new Fromages(e.nom, e.type, e.pays, e. classement)
     });
 };
