@@ -42,9 +42,9 @@ document.body.appendChild(section);
 
 function afficher() {
     
-    section.innerHTML = ""
+    section.innerHTML = "";
     let xhr = new XMLHttpRequest();
-    xhr.open("get", "datas/chapitre.json");
+    xhr.open("get", "php/data.php");
     xhr.responseType = "json";
     xhr.addEventListener("load", () => {
         xhr.response.forEach(element => {
