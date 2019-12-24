@@ -20,5 +20,6 @@ class Fromages{
         mesdiv.appendChild(titre);
         mesdiv.appendChild(classement);
         mesdiv.appendChild(type);
+
     }
 }

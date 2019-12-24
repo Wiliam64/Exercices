@@ -2,6 +2,7 @@
 let requete = new XMLHttpRequest;
 
 // J'ouvre ma requete, je renseigne la méthode 'POST' ou 'GET', et l'URL/fichier à récupérer
+// requete.open("GET", "JS/fromages.json");
 requete.open("GET", "JS/fromages.json");
 
 // Je demande le type de réponse recus (texte, JSON, etc)

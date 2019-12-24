@@ -1,8 +1,4 @@
-/* A reprendre en jQuerry
-
-
-
-
+/*
 
 // Je crée une requete
 let requete = new XMLHttpRequest;
@@ -44,3 +40,29 @@ requete.onload = function(){
        mesdiv.appendChild(type);
     });
 };
+*/
+
+$.ajax({
+   type: "get",
+   url: "JS/fromages.json",
+   data: "data",
+   dataType: "json",
+   success: function (response) {
+      // console.log(response);
+      $(response).each(function (index, element) {
+         // element == this
+         $('body').append('<div></div>');
+         console.log(element.nom);
+         new Fromages(this.nom, this.type, this.pays, this.classement);
+         // $('h1').text(element);
+         // $('classement').text(element.classement);
+         // $('pays').text(element.pays);
+         // $('type').text(element.type);
+         
+         // $('div').append('<h1></h1>');
+         // $('div').append('<pays></pays>');
+         // $('div').append('<classement></classement>');
+         // $('div').append('<type></type>');
+      });
+   }
+});
