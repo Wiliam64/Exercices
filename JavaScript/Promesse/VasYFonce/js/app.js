@@ -10,9 +10,6 @@ function faireQqc(){
             console.log("Promesse : " + i.promesse);
             console.log("URL : " + i.url);
 }
-        xhr.onerror = function(){
-
-        }
     })
 }
 const promise = faireQqc();
