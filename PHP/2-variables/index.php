@@ -7,13 +7,14 @@
     <title>Variables</title>
 </head>
 <body>
+<h1>Test</h1>
     <?php 
-        $hello = "Hello"; 
+        $hello = "Hello, "; 
         //Afficher la variable $hello//
-        echo get_type($hello);
-        $world = "World";
+        echo gettype($hello);
+        $world = "World !";
 
-        $helloWorld = $hello.", ".$world." !";
+        $helloWorld = $hello.$world;
         echo $helloWorld;
 
         $montantHt = 15.2;
