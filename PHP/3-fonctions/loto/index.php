@@ -10,7 +10,7 @@ function tableau($n1, $n2){ //Fonction qui implémente +1 dans le tableau pour f
 tableau(1, 49); //Appel de la fonction, crée un tableau de 1 à 49
 
 
-
+echo "<h1>Boucle for</h1>";
 function tirage(){ //Fonction qui implémente 5 chiffre aléatoire dans le tableau 
     $tableau = array(); //Déclaration du tableau
 
@@ -22,13 +22,16 @@ function tirage(){ //Fonction qui implémente 5 chiffre aléatoire dans le table
 };
 tirage(); //Appel de la fonction
 
+echo "<h1>Boucle while</h1>";
 function tirage2(){ //Fonction identique a la précédente, avec une boucle While
-
-    $tableau =array(); //Déclaration du tableau
+    $tableau = array(); //Déclaration du tableau
     $n = 1; //Déclaration de $n qui vaut 1
-    while($n <= 5) { //Boucle 'while' jusqu'a ce que $n soit égal à 5
-        $n++; //Incrémente $n de +1
-        array_push($tableau, random_int(1,49)); //Empile un chiffre alétoire entre 1 et 49
+    while($n <= 5 ) { //Boucle 'while' jusqu'a ce que $n soit égal à 5
+        $random = random_int(1,49);
+        if(!in_array($random, $tableau)){
+            array_push($tableau, $random); //Empile un chiffre alétoire entre 1 et 49
+            $n++; //Incrémente $n de +1
+        }
     };
     var_dump($tableau); //Affiche le tableau
 }
@@ -36,11 +39,25 @@ tirage2(); //Appel de la fonction
 
 
 
+echo "<h1>Mon Tirage</h1>";
+$monTirage = array(tirage());
+
+
+echo "<h1>Boucle do...while</h1>";
+echo "<table><tr><td>";
+
+
 do{ //Boucle 'do...while' qui fait :
-    echo "<h1>Tirage n° ".$i."</h1>"; //Affiche "Tirage n° " suivis de la valeur actuelle de $i
-    tirage(); //Appel la fonction tirage
+    tirage2(); //Appel la fonction tirage
     $i++; //Rajoute +1 à $i
+    if(in_array($random, $monTirage)){
+        echo "Gagné !";
+    } else {
+        echo "Perdu";
+    };
 }
 while($i <= 10); //Tant que $i n'est pas égal à 10
+
+echo "</td></tr></table>";
 
 ?>
