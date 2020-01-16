@@ -27,21 +27,45 @@
             array("ville"=>"PAU","departement"=>"64","latitude"=>"43.3","longitude"=>"-0.366667","population"=>"84000","densite"=>"2575"),
             array("ville"=>"HERES","departement"=>"65","latitude"=>"43.55","longitude"=>"0","population"=>"100","densite"=>"21")
         );
-        
-        echo "<table style = 'border: 2px dashed red'><tr><td>";
-        var_dump($results[14]);
-        echo "</td></tr></table>";
-        
-        foreach ($results as $key => $value ) {
-            sort($results);
-            echo "<table style ='border: 1px solid black; margin: 1vh'>";
-            echo "<tr>";
-            echo "<td>";
-            var_dump($results[$key]);
-            echo "</td>";
-            echo "</tr>";
-            echo "</table>";
-        };
     ?>
+    <table class="table table-striped table-dark">
+    </style>
+        <thead>
+        <th>Ville</th>
+        <th>Département</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+        <th>Population</th>
+        <th>Densité</th>
+        </thead>
+        <tbody>
+    <?php
+    asort($results);
+    foreach ($results as $key => $value) {
+        ?>
+    <tr>
+        <td><?=$value["ville"] ?></td>
+        <td><?=$value["departement"] ?></td>
+        <td><?=$value["latitude"] ?></td>
+        <td><?=$value["longitude"] ?></td>
+        <td><?=$value["population"] ?></td>
+        <td><?=$value["densite"] ?></td>
+    </tr>
+   <?php } ?>
+    </tbody>
+    </table>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+        th{
+            text-align : center;
+        }
+        td{
+            text-align: center;
+        }
+        table tr:nth-child(13) > td{
+            background-color: #82B03F;
+            border: solid #47661A 2px;
+        }
+        </style>
 </body>
 </html>

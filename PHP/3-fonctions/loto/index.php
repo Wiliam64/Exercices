@@ -1,11 +1,11 @@
 <?php
 function tableau($n1, $n2){ //Fonction qui implémente +1 dans le tableau pour faire un tableau de $n1 à $n2 qui sont des arguments
-    $tableau = array(); //Déclaration du tableau
+    $tableau = array();  //Déclaration du tableau
     
     for ($n = $n1; $n <= $n2; $n++) { //Boucle 'for' tant que $n1 n'est pas égal à $n2, incrémente $n de +1
         array_push($tableau, $n); // Empile $n a la fin du tableau, jusqu'a ce que $n1 = 49
     }
-    var_dump($tableau); //Affiche le tableau
+    var_dump($tableau); //Affiche le tableau 
 };
 tableau(1, 49); //Appel de la fonction, crée un tableau de 1 à 49
 
@@ -15,9 +15,9 @@ function tirage(){ //Fonction qui implémente 5 chiffre aléatoire dans le table
     $tableau = array(); //Déclaration du tableau
 
     for($n = 1; $n <= 5; $n++) { //Boucle 'for' tant que $n n'est pas égal à 5, incrémente $n de +1
-        array_push($tableau, random_int(1,49)); //Empile un chiffre alétoire entre 1 et 49
+        array_push($tableau, random_int(1,49)); //Empile un chiffre aléatoire entre 1 et 49
     }
-    var_dump($tableau); //Affiche le tableau
+    return($tableau); //Affiche le tableau
     
 };
 tirage(); //Appel de la fonction
@@ -29,7 +29,7 @@ function tirage2(){ //Fonction identique a la précédente, avec une boucle Whil
     while($n <= 5 ) { //Boucle 'while' jusqu'a ce que $n soit égal à 5
         $random = random_int(1,49);
         if(!in_array($random, $tableau)){
-            array_push($tableau, $random); //Empile un chiffre alétoire entre 1 et 49
+            array_push($tableau, $random); //Empile un chiffre aléatoire entre 1 et 49
             $n++; //Incrémente $n de +1
         }
     };
@@ -39,25 +39,26 @@ tirage2(); //Appel de la fonction
 
 
 
-echo "<h1>Mon Tirage</h1>";
-$monTirage = array(tirage());
-
-
-echo "<h1>Boucle do...while</h1>";
-echo "<table><tr><td>";
-
-
-do{ //Boucle 'do...while' qui fait :
-    tirage2(); //Appel la fonction tirage
-    $i++; //Rajoute +1 à $i
-    if(in_array($random, $monTirage)){
-        echo "Gagné !";
-    } else {
-        echo "Perdu";
-    };
+function loto(){
+    $grille = array(2,4,8,9,2);
+    $tableau = array();  //Déclaration du tableau
+    
+    for ($n = 1; $n <= 10; $n++) { //Boucle 'for' tant que $n1 n'est pas égal à $n2, incrémente $n de +1
+        array_push($tableau, $n); // Empile $n a la fin du tableau, jusqu'a ce que $n1 = 49
+    }
+    // $resultat = array();
+    $resultat = array(array_rand(array_flip($tableau), 5));
+    // $compare = array();
+    $compare = array(array_diff($grille, $resultat));
+    var_dump($resultat);
+    return empty($compare);
 }
-while($i <= 10); //Tant que $i n'est pas égal à 10
 
-echo "</td></tr></table>";
+$count = 0;
+do{
+    loto();
+    $count++;
+} while(loto() == false);
 
+echo 'Tu as gagné en '.$count.' essaie !';
 ?>
