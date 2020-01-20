@@ -2,10 +2,10 @@
 <html lang="en">
 
 <?php
-    include '../fonctions.php';
-    include $template.'/head.php';
-    include $template.'/nav.php';
-    include $template.'/style.php';
+    include '../../config/config.php';
+    include template.'/head.php';
+    include template.'/nav.php';
+    include css;
 ?>
 
     <!-- First Container -->
@@ -33,11 +33,9 @@
     </div>
 
     <!-- Footer -->
-    <footer class="container-fluid bg-4 text-center">
-        <p>Bootstrap Theme Made By
-            <a href="https://www.w3schools.com">www.w3schools.com</a>
-        </p>
-    </footer>
+<?php 
+        include template.'/footer.php';
+?>
 
 </body>
 

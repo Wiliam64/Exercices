@@ -2,10 +2,10 @@
 <html lang="en">
 
 <?php
-    include '../fonctions.php';
-    include $template.'/head.php';
-    include $template.'/nav.php';
-    include $template.'/style.php';
+    include '../config/config.php';
+    include template.'/head.php';
+    include template.'/nav.php';
+    include css;
 ?>
 
 <body>
@@ -13,7 +13,7 @@
     <!-- First Container -->
     <div class="container-fluid bg-1 text-center">
         <h3 class="margin">Qui sommes-nous ?</h3>
-        <img src="images/bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+        <img src= <?=img."/bird.jpg"?> class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
         <h3>I'm an adventurer</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -39,28 +39,23 @@
             <div class="col-sm-4">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua.</p>
-                <img src="images/birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+                <img src=<?= img."/birds1.jpg"?> class="img-responsive margin" style="width:100%" alt="Image">
             </div>
             <div class="col-sm-4">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua.</p>
-                <img src="images/birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+                <img src=<?=img."/birds2.jpg"?> class="img-responsive margin" style="width:100%" alt="Image">
             </div>
             <div class="col-sm-4">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua.</p>
-                <img src="images/birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+                <img src= <?=img."/birds3.jpg"?> class="img-responsive margin" style="width:100%" alt="Image">
             </div>
         </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="container-fluid bg-4 text-center">
-        <p>Bootstrap Theme Made By
-            <a href="https://www.w3schools.com">www.w3schools.com</a>
-        </p>
-    </footer>
-
+    <?php
+        include template.'/footer.php';
+    ?>
 </body>
 
 </html>
