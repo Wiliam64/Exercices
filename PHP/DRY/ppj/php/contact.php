@@ -5,7 +5,7 @@
     include '../../config/config.php';
     include template.'/head.php';
     include template.'/nav.php';
-    include css;
+    // include css;
 ?>
 
     <!-- First Container -->

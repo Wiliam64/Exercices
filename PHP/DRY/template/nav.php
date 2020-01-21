@@ -7,24 +7,24 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a id="logo" class="navbar-brand" href="index.php"><img src= <?= img."/bird.jpg"?>  alt="logo" width="50px;"></a>
+                <a id="logo" class="navbar-brand" href="index.php"><img class ="img-circle"src=<?=img."/bird.jpg"?>  alt="logo" width="50px;"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="../index.php">ACCUEIL</a>
+                        <a href="http://localhost/Exercices/PHP/DRY/index.php">ACCUEIL</a>
                     </li>
                     <li>
-                        <a href="../php/produits.php">NOS PRODUITS</a>
+                        <a href="http://localhost/Exercices/PHP/DRY/ppj/php/produits.php">NOS PRODUITS</a>
                     </li>
                     <li>
-                        <a href="../php/blog.php">BLOG</a>
+                        <a href="http://localhost/Exercices/PHP/DRY/ppj/php/blog.php">BLOG</a>
                     </li>
                     <li>
-                        <a href="../php/contact.php">CONTACT</a>
+                        <a href="http://localhost/Exercices/PHP/DRY/ppj/php/contact.php">CONTACT</a>
                     </li>
                     <li>
-                        <a href="../php/about.php">ABOUT</a>
+                        <a href="http://localhost/Exercices/PHP/DRY/ppj/php/about.php">A PROPOS</a>
                     </li>
                 </ul>
             </div>
