@@ -1,0 +1,32 @@
+Dictionnaire de données 
+
+Nom : num_produits
+Code : NUM_PRODUITS
+Type : AUTO_INCREMENT
+Taille : ,
+Commentaire : 
+
+Nom : Produits
+Code : PRODUITS
+Type : VARCHAR
+Taille : 50,
+Commentaire : 
+
+Nom : Prix
+Code : PRIX
+Type : DECIMAL
+Taille : 100,
+Commentaire : 
+
+Nom : num_rayons
+Code : NUM_RAYONS
+Type : AUTO_INCREMENT
+Taille : ,
+Commentaire : 
+
+Nom : Rayons
+Code : RAYONS
+Type : VARCHAR
+Taille : 50,
+Commentaire : 
+
