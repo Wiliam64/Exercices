@@ -1,6 +1,6 @@
 <?php
 define("template", './template/template-parts');
-define("img", 'asset/img');
+define("img", './asset/img');
 define("css", 'asset/css/style.css');
 define("fonction", "fonction");
 define("classes", "Classes");

@@ -12,19 +12,19 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="http://localhost/Exercices/PHP/DRY/?page=accueil">ACCUEIL</a>
+                        <a href="http://localhost/Exercices/PHP/DRY/index.php?page=accueil">ACCUEIL</a>
                     </li>
                     <li>
-                        <a href="http://localhost/Exercices/PHP/DRY/?page=produits">NOS PRODUITS</a>
+                        <a href="http://localhost/Exercices/PHP/DRY/index.php?page=produits">NOS PRODUITS</a>
                     </li>
                     <li>
-                        <a href="http://localhost/Exercices/PHP/DRY/?page=blog">BLOG</a>
+                        <a href="http://localhost/Exercices/PHP/DRY/index.php?page=blog">BLOG</a>
                     </li>
                     <li>
-                        <a href="http://localhost/Exercices/PHP/DRY/?page=contact">CONTACT</a>
+                        <a href="http://localhost/Exercices/PHP/DRY/index.php?page=contact">CONTACT</a>
                     </li>
                     <li>
-                        <a href="http://localhost/Exercices/PHP/DRY/?page=about">A PROPOS</a>
+                        <a href="http://localhost/Exercices/PHP/DRY/index.php?page=about">A PROPOS</a>
                     </li>
                 </ul>
             </div>

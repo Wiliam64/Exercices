@@ -7,24 +7,24 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a id="logo" class="navbar-brand" href="http://localhost/Exercices/PHP/DRY/?page=accueil"><img class ="img-circle"src=<?=img."/bird.jpg"?>  alt="logo" width="50px;"></a>
+                <a id="logo" class="navbar-brand" href="accueil"><img class ="img-circle"src=<?=img."/bird.jpg"?>  alt="logo" width="50px;"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="http://localhost/Exercices/PHP/DRY/?page=accueil">ACCUEIL</a>
+                        <a href="accueil">ACCUEIL</a>
                     </li>
                     <li>
-                        <a href="http://localhost/Exercices/PHP/DRY/?page=produits">NOS PRODUITS</a>
+                        <a href="produits">NOS PRODUITS</a>
                     </li>
                     <li>
-                        <a href="http://localhost/Exercices/PHP/DRY/?page=blog">BLOG</a>
+                        <a href="blog">BLOG</a>
                     </li>
                     <li>
-                        <a href="http://localhost/Exercices/PHP/DRY/?page=contact">CONTACT</a>
+                        <a href="contact">CONTACT</a>
                     </li>
                     <li>
-                        <a href="http://localhost/Exercices/PHP/DRY/?page=about">A PROPOS</a>
+                        <a href="about">A PROPOS</a>
                     </li>
                 </ul>
             </div>
