@@ -7,7 +7,7 @@
     <title>Formulaire</title>
 </head>
 <body>
-    <form action="connexion.php" method="post">
+    <form action="inscription.php" method="post">
         <label for="name">Login</label>
         <input type="text" name="name" required><br>
         <label for="pass">Password</label>
