@@ -1,6 +1,6 @@
 <?php
 session_start();
-$uname = $_SESSION["name"] = $_POST["name"];
+$uname = $_SESSION["email"] = $_POST["email"];
 $pass = $_SESSION["password"] = hash("sha256", $_POST["password"]);
 $remember = isset($_POST["remember"]);
 

@@ -1,3 +1,17 @@
+<?php
+session_start();
+if(isset($_COOKIE["auth"])){
+    $auth = $_COOKIE["auth"];
+        $auth = explode("-----", $auth);
+        var_dump($auth);
+        $_SESSION["email"] = $auth[0];
+        $pass = $auth[1];
+        var_dump($pass);
+    header("Location: page.php");
+} else {
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +23,7 @@
 <body>
     <form action="connexion.php" method="post">
         <label for="name">Login</label>
-        <input type="text" name="name" required><br>
+        <input type="text" name="email" required><br>
         <label for="pass">Password</label>
         <input type="password" name="password" required><br>
         <input type="checkbox" name="remember">
@@ -18,3 +32,5 @@
     </form>
 </body>
 </html>
+
+<?php } ?>
