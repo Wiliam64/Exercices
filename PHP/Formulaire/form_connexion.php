@@ -1,17 +1,15 @@
 <?php
 session_start();
-if(isset($_COOKIE["auth"])){
-    $auth = $_COOKIE["auth"];
+    if(isset($_COOKIE["auth"])){
+        $auth = $_COOKIE["auth"];
         $auth = explode("-----", $auth);
         var_dump($auth);
         $_SESSION["email"] = $auth[0];
         $pass = $auth[1];
         var_dump($pass);
-    header("Location: page.php");
-} else {
+        header("Location: page.php");
+    } else {
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

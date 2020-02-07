@@ -1,8 +1,8 @@
 <?php
 
 class Ville{
-    public $nom;
-    public $departement;
+    private $nom;
+    private $departement;
     public function __construct($nom, $departement)
     {
         $this->nom = $nom;
