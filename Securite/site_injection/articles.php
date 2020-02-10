@@ -32,13 +32,16 @@
         $bdd = new PDO('mysql:host='.BDD_SERVER.';dbname='.BDD_DATABASE.';charset=utf8;', BDD_USER, BDD_PWD);
 
         //construction de la requête
-        $sql = $bdd->prepare("SELECT `titre`, `resume`, `id` FROM `article` WHERE titre= ? "); // requete preparée
-        // if($txt != "") $sql .= "where titre like '".$txt."%' ";
-        // $sql .= "LIMIT 3 ";
+        if($txt != ""){
+            $sql = $bdd->prepare("SELECT `titre`, `resume`, `id` FROM `article` WHERE titre= ? "); // requete preparée
+        } else {
+            $sql = $bdd->prepare("SELECT `titre`, `resume`, `id` FROM `article`;"); // requete preparée
+        }
 
         //execution et récup des résultats dans $rows
         $sql->execute(array($txt));
         $rows = $sql->fetchAll();
+        
 
         // $req = $bdd->prepare("SELECT * FROM utilisateurs WHERE login= ? AND password= ?");
         // $req->execute(array($login, $password));

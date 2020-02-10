@@ -40,7 +40,12 @@
         // $req = $bdd->query($sql);
         // $rows = $req->fetchAll();
 
-        $sql = $bdd->prepare("SELECT `titre`, `resume`, `id` FROM `article` WHERE titre= ? "); // requete preparée
+        if($txt != ""){
+            $sql = $bdd->prepare("SELECT `titre`, `resume`, `id` FROM `article` WHERE titre= ? "); // requete preparée
+        } else {
+            $sql = $bdd->prepare("SELECT `titre`, `resume`, `id` FROM `article`;"); // requete preparée
+        }
+        
         $sql->execute(array($txt));
         $rows = $sql->fetchAll();
 

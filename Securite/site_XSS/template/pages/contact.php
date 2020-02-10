@@ -24,8 +24,8 @@
 
 <?php
 if(isset($_POST["envoyer"])) {
-    $nom = $_POST["nom"];
-    $msg = $_POST["message"];
+    $nom = strip_tags($_POST["nom"]); // strips_tags pour filtrer les balises HTML
+    $msg = strip_tags($_POST["message"]);
     echo "<p class='message'>Merci ", $nom, ", votre message est envoyé.</p>";
 }
 ?>
