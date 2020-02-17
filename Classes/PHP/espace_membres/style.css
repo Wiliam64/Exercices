@@ -1,0 +1,15 @@
+.text-center{
+    text-align: center;
+}
+
+.form-div{
+    background-color: gainsboro;
+    margin: 56px auto;
+    border-radius: 5px;
+    width: 300px;
+}
+button{
+    height: 2em;
+    width: 6em;
+    margin: 56px auto;
+}
