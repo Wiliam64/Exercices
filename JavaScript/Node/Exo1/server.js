@@ -20,6 +20,9 @@ app.get('/contact', function(req, res) {
     res.sendFile(route+'contact.html');
   });
 
+app.get('*', function(req, res) {
+    res.status(404).sendFile(route+'404.html');
+  });
 
 app.listen(3000, () => {
     console.log('Serveur en écoute sur le port 3000');
